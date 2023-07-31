@@ -4,27 +4,23 @@ A neural network model for sentiment analysis of movie reviews . The model is bu
 **Note:** This README.md file contains an overview of the project, it is recommended to open [notebook](https://github.com/kwasiasomani/Movie-Review-Sentiment-Classification/blob/master/notebook/Capstone.ipynb) as it contains the code and further explanation for the results.
 
 ## Table of Contents
-- [Movies-Reviews-Classification](#movies-reviews-classification)
+- [Movies-Reviews-Classification](#Movie-Review-Sentiment-Classification)
   * [Dataset](#dataset)
-    + [IMDB Dataset](#imdb-dataset)
     + [Data Splitting](#data-splitting)
     + [Data Preprocessing](#data-preprocessing)
   * [Model Architecture](#model-architecture)
   * [Improving the Model](#improving-the-model)
     + [Hyperparameter Tuning](#hyperparameter-tuning)
-    + [Regularization using Dropout](#regularization-using-dropout)
   * [Model Evaluation](#model-evaluation)
   * [Results](#results)
-  * [Contributers](#contributers)
+  
 
 ## Dataset
-- The project needs a dataset for movies and TV shows reviews, [IMDb](https://www.imdb.com/) is a popular website for movies and TV shows. It has a database of over 8 million movies and TV shows. Using a dataset from this website will be a good choice for the project to train our neural network and test it.
+- The project needs a dataset for movies and TV shows reviews, [IMDb](https://zindi.africa/competitions/movie-review-sentiment-classification-challenge) is a popular website for competition. Using a dataset from this website will be a good choice for the project to train our neural network and test it.
 
-### IMDB Dataset
-- Instead of using the whole dataset, we will use a subset of the dataset. The dataset contains 50,000 reviews for movies and TV shows. The dataset is already balanced, meaning that it contains an equal number of positive and negative reviews. The dataset is available on [Kaggle](https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews).
 
 ### Data Splitting
-- Since the dataset is already balanced, we will split the dataset into 70% training set, 20% validation set, 10% testing set . The training set will be used to train the neural network, validation set is used to further tune the hyperparameters and the testing set will be used to evaluate the neural network.
+- Since the dataset is already balanced, we will split the dataset into 70% training set, 20% validation set. The training set will be used to train the neural network, validation set is used to further tune the hyperparameters and the testing set will be used to evaluate the neural network.
 
 ### Data Preprocessing
 - Text pre-processing is essential for NLP tasks. So, you will apply the following steps on
