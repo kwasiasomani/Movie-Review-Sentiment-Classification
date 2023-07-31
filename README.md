@@ -20,24 +20,22 @@ A neural network model for sentiment analysis of movie reviews . The model is bu
 
 
 ### Data Splitting
-- Since the dataset is already balanced, we will split the dataset into 70% training set, 20% validation set. The training set will be used to train the neural network, validation set is used to further tune the hyperparameters and the testing set will be used to evaluate the neural network.
+- Since the dataset is already balanced, we will split the dataset into 75% training set, 25% validation set. The training set will be used to train the neural network, validation set is used to further tune the hyperparameters and the testing set will be used to evaluate the neural network.
 
 ### Data Preprocessing
 - Text pre-processing is essential for NLP tasks. So, you will apply the following steps on
 our data before used for classification:
-    * Remove punctuation.
-    * Remove stop words.
+    * Remove Special characters.
     * Lowercase all characters.
     * Lemmatization of words.
-- The data preprocessing is done using the [NLTK](https://www.nltk.org/) library.
 
 ## Model Architecture
-- The project uses [PyTorch](https://pytorch.org/) to build the neural network. The neural network is a simple feedforward neural network with 5 layers.
-- The network's input layer takes in 768 inputs corresponding to the vector provided by BERT's pooled output (classification output)
-- Our network consists of 4 hidden layers with 512, 256, 128, 64 units respectively.
+- The project uses [Tensorflow]([https://pytorch.org/](https://www.tensorflow.org/api_docs/python/tf/random_uniform_initializer) to build the neural network. The neural network is a simple feedforward neural network with 5 layers.
+- The network's input layer takes in 768 inputs
+- Our network consists of 1 hidden layer with 64 units respectively.
 - The hidden layers have ReLU activation function.
 - The output layer have sigmoid activation function to classify the vector
-- The network uses [Adam](https://pytorch.org/docs/stable/optim.html#torch.optim.Adam) optimizer and [Binary Cross Entropy](https://pytorch.org/docs/stable/nn.html#torch.nn.BCELoss) loss function.
+- The network uses [Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam) optimizer and [Binary Cross Entropy](https://www.tensorflow.org/api_docs/python/tf/keras/losses/BinaryCrossentropy)
 
 ## Improving the Model
 - The model can be improved by using different hyperparameters and regularization techniques. The following techniques are used to improve the model:
@@ -58,11 +56,11 @@ our data before used for classification:
 - Dropout is applied to the hidden layers of the network. The dropout rate can be specified while initializing the network. The dropout rate is the probability of a neuron to be dropped out. The dropout rate is set to 0.4 in this project.
 
 ## Model Evaluation
-- The model is able to classify the reviews with 93% accuracy on raw test data. On the other hand, the accuracy reached 90% when using the preprocessed data. This indicates that not all preprocessing steps are necessary for the model to perform well.
+- The model is able to classify the reviews with 86% accuracy on test data. On the other hand
 
 ## Results
 - The model's performance on the raw test set is as follows:
-    * Accuracy: 93.6%
+    * Accuracy: 86%
     
  
 - The confusion matrix:
