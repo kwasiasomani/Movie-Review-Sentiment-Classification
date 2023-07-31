@@ -16,7 +16,7 @@ A neural network model for sentiment analysis of movie reviews . The model is bu
   
 
 ## Dataset
-- The project needs a dataset for movies and TV shows reviews, [IMDb](https://zindi.africa/competitions/movie-review-sentiment-classification-challenge) is a popular website for competition. Using a dataset from this website will be a good choice for the project to train our neural network and test it.
+- The project needs a dataset for movies and TV shows reviews, [Zindi](https://zindi.africa/competitions/movie-review-sentiment-classification-challenge) is a popular website for competition. Using a dataset from this website will be a good choice for the project to train our neural network and test it.
 
 
 ### Data Splitting
@@ -27,11 +27,11 @@ A neural network model for sentiment analysis of movie reviews . The model is bu
 our data before used for classification:
     * Remove Special characters.
     * Lowercase all characters.
-    * Lemmatization of words.
+    * Tokenization of words.
 
 ## Model Architecture
-- The project uses [Tensorflow]([https://pytorch.org/](https://www.tensorflow.org/api_docs/python/tf/random_uniform_initializer) to build the neural network. The neural network is a simple feedforward neural network with 5 layers.
-- The network's input layer takes in 768 inputs
+- The project uses [Tensorflow](https://www.tensorflow.org/api_docs/python/tf/random_uniform_initializer) to build the neural network. The neural network is a simple feedforward neural network with 5 layers.
+- The network's input layer takes in 100 inputs
 - Our network consists of 1 hidden layer with 64 units respectively.
 - The hidden layers have ReLU activation function.
 - The output layer have sigmoid activation function to classify the vector
@@ -50,30 +50,17 @@ our data before used for classification:
     * Optimizer
     * Loss Function
 - We are only tuning the learning rate in this project since the other hyperparameters will have slight to no effect on the model's performance.
-- You can find the model's performance for different learning rates in the [results](results) folder 
 ### Regularization using Dropout
 - Dropout is a regularization technique that randomly drops out some of the neurons in the network. This technique is used to prevent overfitting.
 - Dropout is applied to the hidden layers of the network. The dropout rate can be specified while initializing the network. The dropout rate is the probability of a neuron to be dropped out. The dropout rate is set to 0.4 in this project.
 
 ## Model Evaluation
-- The model is able to classify the reviews with 86% accuracy on test data. On the other hand
+- The evaluation metrics was accuracy
 
 ## Results
 - The model's performance on the raw test set is as follows:
     * Accuracy: 86%
     
  
-- The confusion matrix:
 
-![image](https://user-images.githubusercontent.com/41492875/218091822-64f96317-e683-4ec4-88df-3e65fd7136e2.png)
-
-> Note: See [notebook](/Review_Classification.ipynb) for more details on the results.
-
-## Contributers
-
-- [Yousef Kotp](https://github.com/yousefkotp)
-
-- [Mohamed Farid](https://github.com/MohamedFarid612)
-
-- [Adham Mohamed](https://github.com/adhammohamed1)
 
