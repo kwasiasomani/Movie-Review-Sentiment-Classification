@@ -1,7 +1,7 @@
 # Movie-Review-Sentiment-Classification
 A neural network model for sentiment analysis of movie reviews . The model is built using [Tensorflow](https://www.tensorflow.org/api_docs/python/tf/random_uniform_initializer) 
 
-**Note:** This README.md file contains an overview of the project, it is recommended to open [notebook](/Review_Classification.ipynb) as it contains the code and further explanation for the results.
+**Note:** This README.md file contains an overview of the project, it is recommended to open [notebook](https://github.com/kwasiasomani/Movie-Review-Sentiment-Classification/blob/master/notebook/Capstone.ipynb) as it contains the code and further explanation for the results.
 
 ## Table of Contents
 - [Movies-Reviews-Classification](#movies-reviews-classification)
@@ -67,9 +67,7 @@ our data before used for classification:
 ## Results
 - The model's performance on the raw test set is as follows:
     * Accuracy: 93.6%
-    * Precision: 94.2%
-    * Recall: 92.92%
-    * F1 Score: 93.5%
+    
  
 - The confusion matrix:
 
